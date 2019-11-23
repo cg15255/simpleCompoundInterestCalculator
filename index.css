@@ -67,6 +67,7 @@ h1 {
 }
 
 /* Main Styles */
+
 main {
   flex-grow: 1;
   font-size: 1.8rem;
@@ -114,6 +115,7 @@ main {
 /* Form Styles */
 
 input[type="text"],
+input[type="number"],
 select {
   padding: 1.5rem 1rem;
   font-size: 1.8rem;
@@ -121,9 +123,15 @@ select {
   border-radius: 0 5px 5px 0;
 }
 
+#loanTerm {
+  border-radius: 5px 0 0 5px;
+  width: 15rem;
+}
+
 select {
   border-radius: 5px;
   width: 225px;
+  color: #333;
 }
 
 select:hover {
@@ -145,16 +153,26 @@ form {
   display: flex;
 }
 
-.input-before {
+.input-before,
+.input-after {
   background: #878787;
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 4rem;
   border: 1px solid rgba(0, 0, 0, 0.35);
+  color: white;
+}
+
+.input-before {
+  width: 4rem;
   border-right: none;
   border-radius: 5px 0 0 5px;
-  color: white;
+}
+
+.input-after {
+  width: 8rem;
+  border-left: none;
+  border-radius: 0 5px 5px 0;
 }
 
 .button {
@@ -173,4 +191,53 @@ form {
   cursor: pointer;
   background: var(--secondaryColor);
   transition: background 0.3s;
+}
+
+/* Media Queries */
+
+@media (max-width: 900px) {
+  body {
+    flex-direction: column;
+  }
+
+  header {
+    height: 6rem;
+    width: 100vw;
+    text-align: center;
+    padding: 2rem;
+  }
+
+  header p {
+    position: absolute;
+    bottom: 1rem;
+    color: #333;
+  }
+
+  header a {
+    color: #333;
+  }
+
+  h1 {
+    font-size: 1.7rem;
+  }
+}
+
+@media (max-width: 700px) {
+  html {
+    font-size: 8px;
+  }
+
+  .container {
+    max-width: 100%;
+    margin: 2.5rem auto 0;
+    padding: 1.4rem;
+  }
+
+  .mainTotalDisplay-top-bar {
+    display: none;
+  }
+
+  .total {
+    font-size: 3.5rem;
+  }
 }
