@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+  <!--<![endif]-->
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Compound Interest Calculator</title>
+    <meta
+      name="description"
+      content="A simple calculator to calculate compound interest"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <!--[if lt IE 7]>
+      <p class="browsehappy">
+        You are using an <strong>outdated</strong> browser. Please
+        <a href="#">upgrade your browser</a> to improve your experience.
+      </p>
+    <![endif]-->
+    <header>
+      <h1>Simple Compound Interest Calculator</h1>
+      <p>
+        Made with love by Chris George. <br />Suggest Edits on
+        <a
+          href="https://www.github.com/cg15255/simpleCompoundInterestCalculator"
+          >Github</a
+        >
+      </p>
+    </header>
+    <main>
+      <div class="container">
+        <div class="card mainTotalDisplay">
+          <section class="mainTotalDisplay-top-bar"></section>
+          <section class="mainTotalDisplay-mainBody">
+            <div class="col">
+              <h3 class="total-header">Total Amount</h3>
+              <h2 class="total totalAmount">$16,200</h2>
+            </div>
+            <div class="col">
+              <h3 class="total-header">Estimated Monthly Payment</h3>
+              <h2 class="total monthlyPayment">$358</h2>
+            </div>
+          </section>
+        </div>
+        <form>
+          <div class="form-group">
+            <label for="basePrice">Base Price</label>
+            <div class="input-group">
+              <span class="input-before">$</span>
+              <input type="text" id="basePrice" placeholder="16000" />
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="interestRate">Interest Rate</label>
+            <div class="input-group">
+              <span class="input-before">%</span>
+              <input type="text" id="interestRate" placeholder="15" />
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="compoundingPeriod">Compounding Period</label>
+            <select name="cars" id="compoundingPeriod">
+              <option value="monthly">Monthly</option>
+              <option value="biweekly">Bi-weekly</option>
+              <option value="weekly">Weekly</option>
+              <option value="daily">Daily</option>
+            </select>
+          </div>
+          <input class="button card" type="submit" value="Calculate" />
+        </form>
+      </div>
+    </main>
+    <script src="index.js"></script>
+  </body>
+</html>

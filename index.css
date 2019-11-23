@@ -1,0 +1,176 @@
+:root {
+  --mainBackground: #f6f9fc;
+  --primaryColor: #9af6e3;
+  --secondaryColor: #ffad78;
+  --buttonColor: #47d5b9;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 10px;
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: "Montserrat", "sans-serif";
+  background: var(--mainBackground);
+  display: flex;
+  color: #333;
+}
+
+a,
+a:hover,
+a:active,
+a:visited {
+  color: white;
+}
+
+.card {
+  box-shadow: 0 13px 27px -5px rgba(50, 50, 93, 0.25),
+    0 8px 16px -8px rgba(0, 0, 0, 0.3), 0 -6px 16px -6px rgba(0, 0, 0, 0.025);
+}
+
+/* Header Styles */
+
+header {
+  width: 250px;
+  height: 100vh;
+  background: var(--primaryColor);
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  box-shadow: 0 3px 9px rgba(0, 0, 0, 0.13);
+}
+
+header p {
+  margin-top: auto;
+  font-size: 1.3rem;
+}
+
+h1 {
+  font-size: 2.8rem;
+  letter-spacing: 2.5px;
+  font-weight: 700;
+}
+
+/* Main Styles */
+main {
+  flex-grow: 1;
+  font-size: 1.8rem;
+}
+
+.container {
+  max-width: 600px;
+  margin: 10rem auto 0;
+}
+
+.mainTotalDisplay {
+  margin-bottom: 3rem;
+}
+
+.mainTotalDisplay-top-bar {
+  background: var(--primaryColor);
+  height: 3rem;
+  width: 100%;
+}
+
+.mainTotalDisplay-mainBody {
+  padding: 2rem;
+}
+
+.mainTotalDisplay-mainBody {
+  display: flex;
+  text-align: center;
+}
+
+.col {
+  flex: 1;
+  padding: 0 0.5rem;
+}
+
+.col:first-child {
+  border-right: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.total {
+  font-size: 5rem;
+  color: var(--secondaryColor);
+  margin-top: 1rem;
+}
+
+/* Form Styles */
+
+input[type="text"],
+select {
+  padding: 1.5rem 1rem;
+  font-size: 1.8rem;
+  border: 1px solid rgba(0, 0, 0, 0.35);
+  border-radius: 0 5px 5px 0;
+}
+
+select {
+  border-radius: 5px;
+  width: 225px;
+}
+
+select:hover {
+  cursor: pointer;
+}
+
+form {
+  font-size: 2rem;
+}
+
+.form-group {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 3rem 0;
+}
+
+.input-group {
+  display: flex;
+}
+
+.input-before {
+  background: #878787;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 4rem;
+  border: 1px solid rgba(0, 0, 0, 0.35);
+  border-right: none;
+  border-radius: 5px 0 0 5px;
+  color: white;
+}
+
+.button {
+  width: 100%;
+  padding: 1.5rem;
+  background: var(--buttonColor);
+  border: none;
+  box-shadow: 1px 2px 6px rgba(0, 0, 0, 0.25);
+  font-size: 2.4rem;
+  color: white;
+  display: block;
+  transition: background 0.3s;
+}
+
+.button:hover {
+  cursor: pointer;
+  background: var(--secondaryColor);
+  transition: background 0.3s;
+}
