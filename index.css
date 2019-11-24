@@ -191,16 +191,15 @@ form {
   }
 
   header {
-    height: 6rem;
+    height: initial;
     width: 100vw;
     text-align: center;
-    padding: 2rem;
+    padding: 1.5rem;
   }
 
   header p {
-    position: absolute;
-    bottom: 1rem;
-    color: #333;
+    margin-top: 1rem;
+    font-size: 1.2rem;
   }
 
   header a {
@@ -208,7 +207,11 @@ form {
   }
 
   h1 {
-    font-size: 1.7rem;
+    font-size: 1.9rem;
+  }
+
+  .container {
+    margin: 2.5rem auto 0;
   }
 }
 
@@ -223,8 +226,22 @@ form {
     padding: 1.4rem;
   }
 
+  .mainTotalDisplay {
+    padding: 2rem;
+  }
+
   .mainTotalDisplay-top-bar {
     display: none;
+  }
+
+  .col {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .button {
+    padding: 3rem;
   }
 
   .total {
