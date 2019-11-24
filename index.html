@@ -29,7 +29,7 @@
       </p>
     <![endif]-->
     <header>
-      <h1>Simple Compound Interest Calculator</h1>
+      <h1>Simple Vehicle Financing Calculator</h1>
       <p>
         Made with love by Chris George. <br />Suggest Edits on
         <a
@@ -44,12 +44,12 @@
           <section class="mainTotalDisplay-top-bar"></section>
           <section class="mainTotalDisplay-mainBody">
             <div class="col">
-              <h3 class="total-header">Total Amount</h3>
-              <h2 class="total totalAmount">$16,200</h2>
+              <h3 class="total-header">Total Amount Paid</h3>
+              <h2 class="total totalAmount">$12,174</h2>
             </div>
             <div class="col">
               <h3 class="total-header">Estimated Monthly Payment</h3>
-              <h2 class="total monthlyPayment">$358</h2>
+              <h2 class="total monthlyPayment">$254</h2>
             </div>
           </section>
         </div>
@@ -58,32 +58,36 @@
             <label for="basePrice">Base Price</label>
             <div class="input-group">
               <span class="input-before">$</span>
-              <input type="text" id="basePrice" placeholder="16000" />
+              <input
+                type="number"
+                min="0"
+                id="basePrice"
+                value="10000"
+                step="1"
+              />
             </div>
           </div>
           <div class="form-group">
-            <label for="interestRate">Interest Rate</label>
+            <label for="interestRate">Actual Interest Rate</label>
             <div class="input-group">
               <span class="input-before">%</span>
-              <input type="text" id="interestRate" placeholder="15" />
+              <input
+                type="number"
+                id="interestRate"
+                value="10"
+                step="0.1"
+                min="0"
+              />
             </div>
           </div>
           <div class="form-group">
             <label for="loanTerm">Term</label>
             <div class="input-group">
-              <input type="number" min="0" id="loanTerm" placeholder="4" />
+              <input type="number" min="0" id="loanTerm" value="4" />
               <span class="input-after">Years</span>
             </div>
           </div>
-          <div class="form-group">
-            <label for="compoundingPeriod">Compounding Period</label>
-            <select name="cars" id="compoundingPeriod">
-              <option value="monthly">Monthly</option>
-              <option value="biweekly">Bi-weekly</option>
-              <option value="weekly">Weekly</option>
-              <option value="daily">Daily</option>
-            </select>
-          </div>
+
           <input class="button" type="submit" value="Calculate" />
         </form>
       </div>

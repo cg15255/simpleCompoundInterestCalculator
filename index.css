@@ -128,16 +128,6 @@ select {
   width: 15rem;
 }
 
-select {
-  border-radius: 5px;
-  width: 225px;
-  color: #333;
-}
-
-select:hover {
-  cursor: pointer;
-}
-
 form {
   font-size: 2rem;
 }
